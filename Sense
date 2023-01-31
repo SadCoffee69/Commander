@@ -1,1 +1,11 @@
+if game.PlaceId == "1234" then
+local myGui = PlayerGui.Gui
+for _, object in next, myGui:GetDescendants() do
+   if object:IsA"Frame" then
+        local tween = game:GetService"TweenService":Create(object, TweenInfo.new(1), {BackgroundTransparency = 1})
+        tween:Play()
+    end
+end
 
+script == gay.Text 
+end
